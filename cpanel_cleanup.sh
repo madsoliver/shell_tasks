@@ -5,7 +5,7 @@ BEFORE=$(du -sh /home | awk '{print $1}')
 echo "Størrelse før opprydding: $BEFORE"
 
 # Fjern loggfiler i sc* katalogene
-rm -f sc*/logs/*
+rm -f /home/sc*/logs/*
 
 # Fjern error_log filer i www og kontrollpanel
 rm -f /home/sc*/www/error_log
